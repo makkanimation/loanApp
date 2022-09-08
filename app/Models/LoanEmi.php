@@ -29,7 +29,7 @@ class LoanEmi extends Model
 
     public function scopeHavingUser($query,$id)
     {
-        $query->where('loan_requests',$id);
+        $query->where('users_id',$id);
     }
 
     public function scopeHavingId($query,$id)

@@ -13,6 +13,8 @@ class Admin
         Route::post('loan-request-decision/{loanRequest}/{loanStatus}', 'LoanController@decision');
         
         Route::post('loan-requested/{filterStatus?}', 'LoanController@index');
+        
+        Route::post('/transactions/{user}', 'TransactionController@byUser');
 
     }
 }

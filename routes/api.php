@@ -26,6 +26,7 @@ Route::group(['namespace'=>'App\Http\Controllers'], function () {
         Route::post('/requested', 'LoanController@requested');
         
         Route::post('/pay-emi/{emi}/{loanRequest}', 'LoanEmiController@payEmi');
+        Route::post('/all-transactions', 'TransactionController@index');
     
     });
 });
